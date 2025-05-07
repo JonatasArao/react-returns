@@ -5,8 +5,12 @@ function Home() {
 
   return (
     <>
-      <h1>Home</h1>
-      <NavLink to="/counter">Counter</NavLink>
+    <div className="flex flex-col justify-between items-center h-screen bg-black">
+      <h1 className="text-white text-2xl mt-4">Home</h1>
+      <div className="flex-grow flex items-center justify-center">
+        <NavLink className="text-lg text-blue-300 hover:text-blue-200" to="/counter">Counter</NavLink>
+      </div>
+    </div>
     </>
   )
 }
