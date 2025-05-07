@@ -10,16 +10,25 @@ import './index.css'
 import Home from './pages/home.jsx'
 import Counter from './pages/counter.jsx'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Home
+    },
+    {
+      path: "/counter",
+      Component: Counter
+    },
+    {
+      path: "*",
+      Component: () => <div>404 not found</div>
+    }
+  ],
   {
-    path: "/",
-    Component: Home
-  },
-  {
-    path: "/counter",
-    Component: Counter
+    basename: import.meta.env.MODE === "production" ? "/react-returns" : "/"
   }
-]);
+);
 
 const root = document.getElementById("root");
 
