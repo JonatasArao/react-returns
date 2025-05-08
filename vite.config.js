@@ -12,6 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       pages: path.resolve(__dirname, './src/pages'),
+      ui: path.resolve(__dirname, './src/ui')
     },
   },
   base: process.env.NODE_ENV === 'production' ? '/react-returns/' : '/'
