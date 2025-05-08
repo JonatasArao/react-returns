@@ -7,8 +7,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import './index.css'
-import Home from './pages/home/home.jsx'
-import Counter from './pages/counter/counter.jsx'
+import Home from './pages/home'
+import Counter from './pages/counter'
 
 const router = createBrowserRouter(
   [
