@@ -25,10 +25,10 @@ function Counter() {
       <div className="flex flex-col flex-grow items-center justify-center">
         <p className="text-white text-5xl my-5">{count}</p>
         <div className="flex text-white space-x-2">
-            <Button className="bg-red-700 w-12 h-12 active:bg-red-600" onClick={decreaseCount}>-</Button>
-            <Button className="bg-blue-800 w-12 h-12 active:bg-blue-600" onClick={increaseCount}>+</Button>
+            <Button className="bg-red-700 active:bg-red-600 ring-red-400" onClick={decreaseCount}>-</Button>
+            <Button className="bg-blue-800 active:bg-blue-600 ring-blue-400" onClick={increaseCount}>+</Button>
           </div>
-          <Button className="bg-gray-700 text-white mt-4 w-24 h-12 active:bg-gray-600" onClick={resetCount}>Reset</Button>
+          <Button className="bg-gray-700 active:bg-gray-600 ring-gray-400 text-white mt-4" onClick={resetCount}>Reset</Button>
         </div>
     </div>
     </>
